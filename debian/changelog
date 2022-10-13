@@ -1,0 +1,72 @@
+node-grunt-babel (8.0.0-4) unstable; urgency=medium
+
+  * Team upload.
+
+  * build-depend on recent node-babel-core node-babel-preset-env
+    (not node-babel7);
+    fix stop depend on grunt nodejs node-grunt-contrib-clean
+    node-grunt-contrib-nodeunit node-babel7;
+    fix have autopkgtest depend on grunt and recent node-babel-core;
+    have binary package enhance grunt and recent node-babel-core
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 18 Dec 2020 16:27:17 +0100
+
+node-grunt-babel (8.0.0-3) unstable; urgency=medium
+
+  * Team Upload
+  * Fix VCS fileds (switch back to js-team group)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 07 May 2020 00:28:32 +0530
+
+node-grunt-babel (8.0.0-2) unstable; urgency=medium
+
+  * Team Upload
+  * Reupload to unstable (reverse build dependencies are fixed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 06 May 2020 11:43:47 +0530
+
+node-grunt-babel (8.0.0-1) experimental; urgency=medium
+
+  * Team Upload
+  * New upstream version 8.0.0
+  * Refresh patches
+  * Build with babel 7 and depend on babel 7
+  * Update debian/docs (readme.md => README.md)
+  * Switch to pkg-js-tools for auto install and tests
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 05 May 2020 14:02:44 +0530
+
+node-grunt-babel (7.0.0-4) unstable; urgency=medium
+
+  * Team Upload
+  * Update build dependency
+  * Drop compat, switch to debhelper-compat
+  * Update install files
+  * Update VCS URLs
+  * Bump standards version to 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Update Format URL
+  * Add upstream/metadata
+  * Update "Depends"
+
+ -- Nilesh <npatra974@gmail.com>  Sun, 26 Jan 2020 22:23:50 +0530
+
+node-grunt-babel (7.0.0-3) unstable; urgency=medium
+
+  * Add node-babel-preset-env as build dependency (Closes: #880290)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 31 Oct 2017 10:54:56 +0530
+
+node-grunt-babel (7.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Move to main (babel is in main now)
+  * Enable tests
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 26 Sep 2017 18:11:42 +0530
+
+node-grunt-babel (7.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #874166)
+
+ -- Rahulkrishnan R A <rahulkrishnanfs@gmail.com>  Sun, 03 Sep 2017 14:59:09 +0000

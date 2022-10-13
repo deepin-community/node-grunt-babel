@@ -1,0 +1,3 @@
+Tests: require
+Depends: node-babel-core (>= 7), grunt, node-grunt-babel
+Restrictions: allow-stderr
