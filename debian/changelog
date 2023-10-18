@@ -1,3 +1,24 @@
+node-grunt-babel (8.0.0-6) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-grunt-babel: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 13:59:38 +0000
+
+node-grunt-babel (8.0.0-5) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+    * Fix GitHub tags regex
+    * Fix filenamemangle
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update standards version to 4.6.0, no changes needed.
+  * Drop dependency to nodejs
+  * Rename autopkgtest file
+
+ -- Yadd <yadd@debian.org>  Wed, 05 Jan 2022 15:26:14 +0100
+
 node-grunt-babel (8.0.0-4) unstable; urgency=medium
 
   * Team upload.

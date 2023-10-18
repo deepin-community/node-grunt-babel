@@ -1,21 +1,17 @@
 Source: node-grunt-babel
 Section: javascript
-# Require test cannot be run since package.json#main is missing
-#Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Rahulkrishnan R A <rahulkrishnanfs@gmail.com>
-Build-Depends:
- debhelper-compat (= 12)
- , nodejs
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , grunt
  , node-babel-core (>= 7)
  , node-babel-preset-env (>= 7)
- , grunt
  , node-grunt-cli
  , node-grunt-contrib-clean
  , node-grunt-contrib-nodeunit
- , pkg-js-tools (>= 0.9.35~)
-Standards-Version: 4.5.0
+Standards-Version: 4.6.0
 Homepage: https://github.com/babel/grunt-babel#readme
 Vcs-Git: https://salsa.debian.org/js-team/node-grunt-babel.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-babel
@@ -23,11 +19,10 @@ Rules-Requires-Root: no
 
 Package: node-grunt-babel
 Architecture: all
-Depends:
- ${misc:Depends}
-Enhances:
+Depends: ${misc:Depends}
+Enhances: grunt
  , node-babel-core (>= 7)
- , grunt
+Multi-Arch: foreign
 Description: grunt plugin for babel
  Grunt is a JavaScript task runner, which is a tool used to automatically
  perform frequently used tasks such as minification, compilation, unit testing,
